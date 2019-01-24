@@ -1,4 +1,6 @@
 // out: ./css/style.css, compress: true, sourceMap: false, autoprefixer: last 5 versions, groupmedia: true
+@import url('https://fonts.googleapis.com/css?family=Mystery+Quest');
+$font-family-primary: 'Mystery Quest', cursive;
 * {
     margin: 0;
     padding: 0;
@@ -16,27 +18,54 @@ dq-content{
 
 dq-header {
   display: flex;
-  background-color: #fff;
+  background-color: #008D3A;
 
   width: 100vmax;
   height: 20vmin;
 
-  border: .2em solid #000;
-  border-radius: 1em;
 }
 
 dq-logo {
+    background-color: #FFD600;
+   /* box-shadow: -1px 9px 20px 20px #ffd600;*/
     display: flex;
+    flex-grow: 1;
 img {
     width: 30vmin;
 }
 }
 
-nav {
-    align-items: stretch;
+dq-nav {
+    flex-grow: 3;
+   
+    
 ul {
     list-style-type: none;
-    display: inline-flex;
+    display: flex;
+    justify-content: space-around;
+    line-height: 1.6;
+    height: 100%;
+li {
+    display: flex;
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+    font-family: $font-family-primary;
+    color: #FFD600;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    transition: 0.5s;
+    
+    &:hover, 
+    {
+color: #18dcff;
+opacity: 0.9;
+
+    }
+}
 }
 }
 
