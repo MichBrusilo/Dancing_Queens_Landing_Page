@@ -10,7 +10,33 @@ dq-content{
     width: 100vw;
     height: 100vh;
 
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+dq-header {
+  display: flex;
+  background-color: #fff;
+
+  width: 100vmax;
+  height: 20vmin;
+
+  border: .2em solid #000;
+  border-radius: 1em;
+}
+
+dq-logo {
+    display: flex;
+img {
+    width: 30vmin;
+}
+}
+
+nav {
+    align-items: stretch;
+ul {
+    list-style-type: none;
+    display: inline-flex;
+}
 }
 
