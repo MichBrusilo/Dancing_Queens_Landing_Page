@@ -93,7 +93,32 @@ p.main {
 
 
 dq-aboutus {
+    
     display: flex;
     flex-direction: row;
-   
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    top: 40px;
+    // border: 2px solid red;
+    // background-image: url('/images/angolabg2.jpg');
+    // background-size: cover;
+  
+video {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    max-width: 600px;
+    max-height: 500px;
+}
+h2 {
+    position: absolute;
+    top: 100px;
+    right: 400px;
+}
+h3 {
+    position: absolute;
+    top: 150px;
+    right: 400px;
+}
 }
