@@ -165,3 +165,11 @@ p.secondline {
     color: #FF9800;
 }
 
+.dq-gallery {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 50vh;
+    top: 30vh;
+    border: 2px solid red;
+}
