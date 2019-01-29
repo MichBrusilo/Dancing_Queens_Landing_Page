@@ -166,10 +166,49 @@ p.secondline {
 }
 
 .dq-gallery {
-    display: flex;
-    flex-direction: row;
+    // display: flex;
+    // flex-direction: row;
     position: relative;
-    height: 50vh;
+    min-height: 100vh;
     top: 30vh;
-    border: 2px solid red;
+.title {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
 }
+h1 {
+    font-size: 3rem;
+    color: #FF9800;
+    background-color: #008d3a;
+    padding: 10px 15px;
+}
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 35%;
+    
+}
+a {
+    position: relative;
+    flex-basis: calc(50% - 40px);
+    height: 20%;
+    margin: 0 20px;
+    overflow: hidden;
+}
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+}
+
