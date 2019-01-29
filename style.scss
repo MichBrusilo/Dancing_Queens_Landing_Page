@@ -6,6 +6,7 @@ $font-family-secoundary: 'Lato', sans-serif;
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 dq-content{
@@ -13,11 +14,14 @@ dq-content{
     // flex-wrap: wrap;
     width: 100vw;
     height: 100vh;
+    margin: 0 auto;
     
 }
 
 dq-header {
   display: flex;
+  position: fixed;
+  z-index: 1;
   background-color: #008D3A;
   flex-direction: row;
   width: 100vmax;
@@ -55,7 +59,7 @@ a {
     color: #FFD600;
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     white-space: nowrap;
     transition: 0.5s;
     
@@ -70,13 +74,14 @@ opacity: 0.9;
 }
 
 dq-mainfoto {
-    display: block;
+    display: flex;
     position: relative;
     background-image: url("../images/main2.jpg");
     background-size: cover;
     background-position: center;
+    width: 100vw;
     height: 90vh;
-    min-width: 320px;
+   
 p.main {
     position: absolute;
     text-align: center;
@@ -86,8 +91,13 @@ p.main {
     top: 60vh;
     right: 20vh;
     text-shadow: 2px 6px 7px #00BCD4;
-
     font-family: $font-family-secoundary;
+    transition: .5s;
+    &:hover,
+    {
+    font-size: 3.2rem;
+    cursor: pointer;
+    }
 }
 }
 
@@ -113,12 +123,14 @@ video {
 }
 h2 {
     position: absolute;
+    max-width: 20%;
     top: 100px;
     right: 100px;
 }
 h3 {
     position: absolute;
-    top: 150px;
+    
+    top: 200px;
     right: 100px;
 }
 }
