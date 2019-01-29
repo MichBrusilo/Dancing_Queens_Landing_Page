@@ -119,6 +119,9 @@ video {
     left: 10vw;
     max-width: 600px;
     max-height: 500px;
+    border: 10px solid #008d3a;
+    box-shadow: -17px 16px 15px 0px #CDDC39;
+    
 }
 .angola1 {
     position: relative;
@@ -134,22 +137,31 @@ a.rotate {
     top: 15vh;
     left: 45vw;
     transform: rotate(135deg);
+img {
+    box-shadow: #008D3A 20px -8px 15px 2px;
+}
    
 }
 p.firstline {
     position: absolute;
     max-width: 40%;
     top: 5%;
-    right: 400px;
+    right: 420px;
     font-family: $font-family-secoundary;
     font-size: 2rem;
+    color: #008d3a;
+    text-shadow: 1px 2px 2px #FFEB3B, 3px 2px 16px #4caf50, 0 0 5px #FF9800;
+}
+
+
 }
 p.secondline {
     position: absolute;
-    top: 55%;
-    max-width: 30%;
-    right: 25px;
+    top: 75%;
+    max-width: 40%;
+    right: 15px;
     font-family: $font-family-secoundary;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: #FF9800;
 }
-}
+
