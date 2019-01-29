@@ -59,7 +59,7 @@ a {
     color: #FFD600;
     display: flex;
     align-items: center;
-    font-size: 2rem;
+    font-size: 2.6rem;
     white-space: nowrap;
     transition: 0.5s;
     
@@ -107,9 +107,8 @@ dq-aboutus {
     display: flex;
     flex-direction: row;
     position: relative;
-    width: 100vw;
     height: 50vh;
-    top: 120px;
+    top: 10vh;
     
     // background-image: url('/images/angolabg2.jpg');
     // background-size: cover;
@@ -117,20 +116,40 @@ dq-aboutus {
 video {
     position: absolute;
     top: 50px;
-    left: 200px;
+    left: 10vw;
     max-width: 600px;
     max-height: 500px;
 }
-h2 {
-    position: absolute;
-    max-width: 20%;
-    top: 100px;
-    right: 100px;
-}
-h3 {
-    position: absolute;
+.angola1 {
+    position: relative;
+    top: -2vh;
+    left: 43%;
     
-    top: 200px;
-    right: 100px;
+    width: 45vw;
+   
+  
+}
+a.rotate {
+    position: absolute;
+    top: 15vh;
+    left: 45vw;
+    transform: rotate(135deg);
+   
+}
+p.firstline {
+    position: absolute;
+    max-width: 40%;
+    top: 5%;
+    right: 400px;
+    font-family: $font-family-secoundary;
+    font-size: 2rem;
+}
+p.secondline {
+    position: absolute;
+    top: 55%;
+    max-width: 30%;
+    right: 25px;
+    font-family: $font-family-secoundary;
+    font-size: 1.5rem;
 }
 }
