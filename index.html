@@ -34,10 +34,14 @@
         <!--ABOUTUS-->
         
         <dq-aboutus> 
-                <video id="vid" onmouseover="this.play()" onmouseout="this.pause()"
-                autobuffer="true">
+                <video id="controls">
                 <source src="images/filmik.mp4" type='video/mp4'>
                 </video>
+                <menu>
+                    <button type="button" onclick="document.getElementById('controls')[document.getElementById('controls').paused || document.getElementById('controls').ended ? 'play' : 'pause']()">Play/Pause</button>
+                    <button type="button" onclick="document.getElementById('controls').muted = !document.getElementById('controls').muted">Mute/Unmute</button>
+                    
+                </menu>
                 <a class="rotate"><img src="images/angolabg2.jpg" alt=""></a>
             <div class="angola1">
                <p class="firstline">Dancing Queens, czyli Halina i Dominika :) Dwie szalone pasjonatki tańca!</p>

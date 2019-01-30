@@ -119,14 +119,33 @@ video {
     box-shadow: -17px 16px 15px 0px #CDDC39;
     
 }
+menu {
+    position: absolute;
+    top: 340px;
+    left: 18.5vw;
+button {
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1rem;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        opacity: 1;
+    }
+}
+}
 .angola1 {
     position: relative;
     top: -2vh;
     left: 43%;
-    
     width: 45vw;
-   
-  
 }
 a.rotate {
     position: absolute;
