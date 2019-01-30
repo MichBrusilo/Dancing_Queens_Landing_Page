@@ -12,12 +12,12 @@ body {
     overflow-x: hidden;
 }
 dq-content{
-    // display: flex;
-    // flex-wrap: wrap;
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
 }
+
+/*HEADER*/
 
 dq-header {
   display: flex;
@@ -32,7 +32,6 @@ dq-header {
 
 dq-logo {
     background-color: #FFD600;
-   /* box-shadow: -1px 9px 20px 20px #ffd600;*/
     display: flex;
     flex-grow: 1;
 img {
@@ -42,8 +41,6 @@ img {
 
 dq-nav {
     flex-grow: 3;
-   
-    
 ul {
     list-style-type: none;
     display: flex;
@@ -102,6 +99,7 @@ p.main {
 }
 }
 
+/*ABOUTUS*/
 
 dq-aboutus {
     
@@ -111,9 +109,6 @@ dq-aboutus {
     height: 50vh;
     top: 10vh;
     
-    // background-image: url('/images/angolabg2.jpg');
-    // background-size: cover;
-  
 video {
     position: absolute;
     top: 50px;
@@ -166,12 +161,15 @@ p.secondline {
     color: #FF9800;
 }
 
+/*GALLERY*/
+
 .dq-gallery {
     // display: flex;
     // flex-direction: row;
     position: relative;
     min-height: 100vh;
     top: 30vh;
+    background-color: white;
 .title {
     position: absolute;
     bottom: 10%;
@@ -213,6 +211,8 @@ img {
     min-height: 100%;
 }
 }
+
+/*ARROW*/
 
 .arrow {
     position: relative;
@@ -256,12 +256,15 @@ img {
  }
  }
 
+ /*NEWS*/
+
  .news {
      position: relative;
      top: 20vh;
      width: 100%;
-     height: 60vh;
+     min-height: 80vh;
      background-color: #FF9800;
+     z-index: -1;
 .line1 {
     width: 30%;
     height: 5%;
@@ -281,8 +284,67 @@ p.thirdline {
     text-shadow: 1px 2px 2px #FFEB3B, 3px 2px 16px #4caf50, 0 0 5px #FF9800;
 }
 .face {
-   position: absolute;
-   top: 10%;
-   right: 20%;
+   float: right;
+   margin-right: 40px;
 }
  }
+
+/* FOOTER */ 
+
+.dq-footer {
+    position: relative;
+    top: 15vh;
+    // min-height: 40vh;
+    width: 100vw;
+  
+.orange-bg {
+  position: absolute;
+  background-size: cover;
+  background-color: #ff9800;
+  top: 0;
+  height: 400px;
+  width: 100vw;
+  z-index: -1;
+  overflow-x: hidden;
+}
+.red-bg {
+//   position: absolute;
+  top: 5%;
+  left: 2%;
+  background-color: #e31e24;
+  min-height: 500px;
+  margin: 120px 0px;
+  width: 100vw;
+  min-height: 30vh;
+  transform: skewY(5deg);
+  z-index: 100;
+}
+.shadow {
+    box-shadow: -2px -5px 5px 0px rgba(0,0,0,0.3);
+}
+.content {
+  position: absolute;
+  top: -35%;
+  left: 25%;
+  text-align: center;
+  margin: 150px 10vw;
+  min-width: 30vw;;
+  max-width: 60vw;
+  min-height: 20vh;
+  background-color: transparent;
+
+  line-height: 450%;
+  transform: skewY(-5deg);
+}  
+p.h {
+    font-family: $font-family-secoundary;
+    font-size: 3rem;
+    color: #FFD600;
+ } 
+p.try {
+    font-family: $font-family-secoundary;
+    text-align: center;;
+    font-size: 2rem;
+    color: #FFD600;
+  }
+}

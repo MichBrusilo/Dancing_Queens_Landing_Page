@@ -10,25 +10,30 @@
 </head>
 <body>
     <dq-content>
+
+        <!--HEADER-->
+
         <dq-header>
             <dq-logo>
                 <a class ="logo" href="#"><img src="images/logodq.png" alt="Logo"/></a>
             </dq-logo>
            <dq-nav>
                <ul>
-                   <li><a href="#">O nas</a></li>
+                   <li><a href="#aboutus">O nas</a></li>
                    <!-- galeria bedzie prowadzic do innej strony a na głównej bedzie inna galeria -->
-                   <li><a href="#">Galeria</a></li>
-                   <li><a href="#">Co nowego</a></li>
-                   <li><a href="#">Kontakt</a></li>
+                   <li><a href="#gallery">Galeria</a></li>
+                   <li><a href="#news">Co nowego</a></li>
+                   <li><a href="#contact">Kontakt</a></li>
                </ul>
            </dq-nav>
         </dq-header>
         <dq-mainfoto>
-            <p class="main">organizowanie imprez</p>
+            <p id="aboutus" class="main">organizowanie imprez</p>
         </dq-mainfoto>
-        <dq-aboutus>
-          
+
+        <!--ABOUTUS-->
+        
+        <dq-aboutus> 
                 <video id="vid" onmouseover="this.play()" onmouseout="this.pause()"
                 autobuffer="true">
                 <source src="images/filmik.mp4" type='video/mp4'>
@@ -39,7 +44,10 @@
                <p class="secondline">Chcemy organizować najlepsze imprezy taneczne i integrować środowisko taneczne</p>
             </div>
         </dq-aboutus>
-        <section class="dq-gallery">
+
+        <!--GALLERY-->
+
+        <section id="gallery" class="dq-gallery">
             <div class="title">
                 <h1>Nasze zdjęcia</h1>
             </div>
@@ -53,13 +61,19 @@
                 <a data-lightbox="image-1" href="images/7.jpg"><img src="images/thumb7.jpg" alt="mini"></a>
                 <a data-lightbox="image-1" href="images/8.jpg"><img src="images/thumb8.jpg" alt="mini"></a>
             </div>
-        </section>    
+        </section>
+        
+        <!--GALLERYAROW-->
+
         <aside class="arrow">
             <div>
                 <a id="next" href="#">Galeria</a>
             </div>
         </aside>
-        <section class="news">
+
+        <!--NEWS-->
+
+        <section id="news" class="news">
                 <svg class="line1">
                         <line x1="00" y1="0" x2="100%" y2="0"/>
                         Sorry, your browser does not support inline SVG.
@@ -73,9 +87,19 @@
                     </div>
                 </div>
         </section>
-        <dq-footer>
 
-        </dq-footer>
+        <!--FOOTER-->
+
+        <section id="contact" class="dq-footer">
+                <div class="orange-bg">
+                    <div class="red-bg shadow">
+                        <div class="content">
+                        <p class="h">Skontaktuj się z nami</p>
+                        <p class="try">Tel. 509 626 255</p>
+                        </div>
+                     </div>
+                 </div>
+        </section>
     </dq-content>
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
