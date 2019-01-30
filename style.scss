@@ -1,8 +1,51 @@
 // out: ./css/style.css, compress: true, sourceMap: false, autoprefixer: last 5 versions, groupmedia: true
 @import url('https://fonts.googleapis.com/css?family=Mystery+Quest');
 @import url('https://fonts.googleapis.com/css?family=Lato');
+/*RWD*/ 
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-max: 576px;
+
+// Small tablets (portrait view)
+$screen-md-max: 768px;
+
+// Tablets and small desktops
+$screen-lg-max: 992px;
+
+// Large tablets and desktops
+$screen-xl-max: 1200px;
+
+// Small devices
+@mixin sm {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (max-width: #{$screen-md-max}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (max-width: #{$screen-lg-max}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+
 $font-family-primary: 'Mystery Quest', cursive;
 $font-family-secoundary: 'Lato', sans-serif;
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +53,9 @@ $font-family-secoundary: 'Lato', sans-serif;
 }
 body {
     overflow-x: hidden;
+    // @include sm {
+    //     background-color: #CDDC39;
+    // }
 }
 dq-content{
     width: 100vw;
@@ -367,3 +413,45 @@ p.try {
     color: #FFD600;
   }
 }
+
+/*RWD*/ 
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
