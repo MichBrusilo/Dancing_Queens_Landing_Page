@@ -8,14 +8,15 @@ $font-family-secoundary: 'Lato', sans-serif;
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    overflow-x: hidden;
+}
 dq-content{
     // display: flex;
     // flex-wrap: wrap;
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
-    
 }
 
 dq-header {
@@ -62,7 +63,7 @@ a {
     font-size: 2.6rem;
     white-space: nowrap;
     transition: 0.5s;
-    
+    transition-timing-function: linear;
     &:hover, 
     {
 color: #18dcff;
@@ -174,7 +175,7 @@ p.secondline {
 .title {
     position: absolute;
     bottom: 10%;
-    left: 5%;
+    left: 15%;
     transform-origin: 0 0;
     transform: rotate(-90deg);
 }
@@ -190,9 +191,9 @@ h1 {
     align-content: space-around;
     position: absolute;
     top: 5%;
-    right: 5%;
+    right: 30%;
     bottom: 5%;
-    left: 35%;
+    left: 30%;
     
 }
 a {
@@ -213,3 +214,44 @@ img {
 }
 }
 
+.arrow {
+    position: relative;
+    min-height: 10vh;
+    width: 100vw;
+    top: -30vh;
+    
+#next {
+    color: #008d3a;
+    font: normal bold 80px $font-family-secoundary;
+    padding: 0.5em 1.5em 0.5em 0;
+    position: absolute;
+    right: 5%;
+    text-decoration: none;
+}
+ #next:before, #next:after {
+    background: #008d3a;
+    -moz-border-radius: 0.2em;
+    -webkit-border-radius: 0.2em;
+    border-radius: 0.2em;
+    content: "";
+    display: block;
+    height: 0.3em;
+    position: absolute;
+    right: 0;
+    width: 1em;
+ }
+ #next:before {
+    top:0.66em;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+ }
+ #next:after {
+    bottom:0.66em;
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+ }
+ }
