@@ -73,7 +73,9 @@ dq-header {
   flex-direction: row;
   width: 100vmax;
   height: 20vmin;
-
+  @include lg {
+    height: 18vmin;
+}
 }
 
 dq-logo {
@@ -112,6 +114,9 @@ a {
 color: #18dcff;
 opacity: 0.9;
 
+    }
+    @include lg {
+        font-size: 2rem;
     }
 }
 }
