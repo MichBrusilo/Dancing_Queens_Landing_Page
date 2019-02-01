@@ -168,12 +168,19 @@ video {
     max-height: 500px;
     border: 10px solid #008d3a;
     box-shadow: -17px 16px 15px 0px #CDDC39;
-    
+    @include lg {
+        top: 40px;
+        max-width: 400px;
+        max-height: 350px;
+    }
 }
 menu {
     position: absolute;
     top: 340px;
     left: 18.5vw;
+    @include lg {
+        top: 210px;
+    }
 button {
     background-color: #f4511e;
     border: none;
@@ -190,6 +197,9 @@ button {
     &:hover {
         opacity: 1;
     }
+    @include lg {
+        padding: 8px 15px;
+    }
 }
 }
 .angola1 {
@@ -197,14 +207,27 @@ button {
     top: -2vh;
     left: 43%;
     width: 45vw;
+    @include lg {
+        left: 70%;
+
+    }
 }
 a.rotate {
     position: absolute;
     top: 15vh;
     left: 45vw;
     transform: rotate(135deg);
+    @include lg {
+        max-width: 70vw;
+        transform: rotate(180deg);
+        top: 50vh;
+    }
 img {
     box-shadow: #008D3A 20px -8px 15px 2px;
+    @include lg {
+        max-width: 90vw;
+        margin: 5%;
+    }
 }
    
 }
@@ -217,6 +240,13 @@ p.firstline {
     font-size: 2rem;
     color: #008d3a;
     text-shadow: 1px 2px 2px #FFEB3B, 3px 2px 16px #4caf50, 0 0 5px #FF9800;
+    @include lg {
+        max-width: 30vw;
+        font-size: 1.5rem;
+        top: 7vh;
+        right: 450px;
+        
+    }
 }
 
 
@@ -229,6 +259,11 @@ p.secondline {
     font-family: $font-family-secoundary;
     font-size: 2rem;
     color: #FF9800;
+    @include lg {
+        max-width: 30vw;
+        font-size: 1.5rem;
+        top: 7vh;
+    }
 }
 
 /*GALLERY*/
