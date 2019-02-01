@@ -53,9 +53,6 @@ $font-family-secoundary: 'Lato', sans-serif;
 }
 body {
     overflow-x: hidden;
-    // @include sm {
-    //     background-color: #CDDC39;
-    // }
 }
 dq-content{
     width: 100vw;
@@ -76,17 +73,33 @@ dq-header {
   @include lg {
     height: 18vmin;
 }
+@include sm {
+    flex-direction: column;
+    height: 30%;
+}
 }
 
 dq-logo {
     background-color: #FFD600;
     display: flex;
     flex-grow: 1;
+    @include sm {
+        justify-content: center;
+    }
+
 img {
     width: 30vmin;
+    @include sm {
+        margin: 5%;
+        width: 55vmin;
+    }
 }
 }
-
+a.logo {
+    @include sm {
+        margin: 5%;
+    }
+}
 dq-nav {
     flex-grow: 3;
 ul {
@@ -95,6 +108,7 @@ ul {
     justify-content: space-around;
     line-height: 1.6;
     height: 100%;
+    
 li {
     display: flex;
     padding: 20px;
@@ -146,9 +160,14 @@ p.main {
     {
     font-size: 3.2rem;
     cursor: pointer;
+    @include lg {
+        font-size: 2.2rem;
+    }
     }
     @include lg {
         font-size: 2rem;
+        top: 70vh;
+        right: 10vh;
     }
     
 }
@@ -294,6 +313,9 @@ p.bigline {
     min-height: 100vh;
     top: 30vh;
     background-color: white;
+    @include lg {
+        top: 35vh;
+    }
 .title {
     position: absolute;
     bottom: 10%;
