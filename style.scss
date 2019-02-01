@@ -71,7 +71,7 @@ dq-header {
   z-index: 1;
   background-color: #008D3A;
   flex-direction: row;
-  width: 100vmax;
+  width: 100%;
   height: 20vmin;
   @include lg {
     height: 18vmin;
@@ -116,7 +116,7 @@ opacity: 0.9;
 
     }
     @include lg {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }
 }
@@ -147,6 +147,10 @@ p.main {
     font-size: 3.2rem;
     cursor: pointer;
     }
+    @include lg {
+        font-size: 2rem;
+    }
+    
 }
 }
 
@@ -159,6 +163,9 @@ dq-aboutus {
     position: relative;
     height: 50vh;
     top: 10vh;
+    @include lg {
+        max-width: 100vw;
+    }
     
 video {
     position: absolute;
@@ -208,7 +215,7 @@ button {
     left: 43%;
     width: 45vw;
     @include lg {
-        left: 70%;
+        left: 50%;
 
     }
 }
@@ -221,12 +228,13 @@ a.rotate {
         max-width: 70vw;
         transform: rotate(180deg);
         top: 50vh;
+        left: 25vw;
     }
 img {
     box-shadow: #008D3A 20px -8px 15px 2px;
     @include lg {
         max-width: 90vw;
-        margin: 5%;
+        margin: 5% 0;
     }
 }
    
@@ -241,14 +249,9 @@ p.firstline {
     color: #008d3a;
     text-shadow: 1px 2px 2px #FFEB3B, 3px 2px 16px #4caf50, 0 0 5px #FF9800;
     @include lg {
-        max-width: 30vw;
-        font-size: 1.5rem;
-        top: 7vh;
-        right: 450px;
-        
+        display: none;
     }
 }
-
 
 }
 p.secondline {
@@ -262,7 +265,23 @@ p.secondline {
     @include lg {
         max-width: 30vw;
         font-size: 1.5rem;
-        top: 7vh;
+        top:60%;
+        right: 5%;
+    }
+}
+p.bigline {
+    display: none;
+    @include lg {
+    display: initial;
+    position: absolute;
+    
+    top: 5%;
+    left: 30%;
+    max-width: 50%;
+    font-family: $font-family-secoundary;
+    font-size: 1.5rem;
+    color: #008d3a;
+    text-shadow: 1px 2px 2px #FFEB3B, 3px 2px 16px #4caf50, 0 0 5px #FF9800;
     }
 }
 
@@ -324,7 +343,6 @@ img {
     min-height: 10vh;
     width: 100vw;
     top: -30vh;
-    
 #next {
     color: #008d3a;
     font: normal bold 80px $font-family-secoundary;
@@ -332,6 +350,9 @@ img {
     position: absolute;
     right: 5%;
     text-decoration: none;
+    @include lg {
+        font: normal bold 40px $font-family-secoundary;
+    }
 }
  #next:before, #next:after {
     background: #008d3a;
@@ -399,7 +420,6 @@ p.thirdline {
 .dq-footer {
     position: relative;
     top: 15vh;
-    // min-height: 40vh;
     width: 100vw;
   
 .orange-bg {
@@ -413,16 +433,20 @@ p.thirdline {
   overflow-x: hidden;
 }
 .red-bg {
-//   position: absolute;
   top: 5%;
   left: 2%;
   background-color: #e31e24;
-  min-height: 500px;
+
   margin: 120px 0px;
   width: 100vw;
   min-height: 30vh;
   transform: skewY(5deg);
   z-index: 100;
+  @include lg {
+      min-height: 30vh;
+      transform: skewY(0deg);
+      
+  }
 }
 .shadow {
     box-shadow: -2px -5px 5px 0px rgba(0,0,0,0.3);
@@ -437,9 +461,12 @@ p.thirdline {
   max-width: 60vw;
   min-height: 20vh;
   background-color: transparent;
-
   line-height: 450%;
   transform: skewY(-5deg);
+  @include lg {
+      line-height: 350%;
+      transform: skewY(0deg);
+  }
 }  
 p.h {
     font-family: $font-family-secoundary;
