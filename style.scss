@@ -342,10 +342,9 @@ p.secondline {
     font-size: 2rem;
     color: #FF9800;
     @include sm {
-        top: 60%;
+        top: 70%;
         max-width: 75vw;
         font-size: 1.2rem;
-
     }
     @include lg {
         max-width: 30vw;
