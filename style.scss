@@ -532,6 +532,7 @@ p.thirdline {
         top: 5%;
         max-width: 100%;
         line-height: 100%;
+        font-size: 1.8rem;
     }
 }
 
@@ -539,7 +540,9 @@ p.thirdline {
    float: right;
    margin-right: 40px;
    @include sm {
-       top: 20vh;
+       position: absolute;
+       top: 25vh;
+       left: 20vw;
    }
 }
  }
@@ -550,6 +553,9 @@ p.thirdline {
     position: relative;
     top: 15vh;
     width: 100vw;
+    @include sm {
+        top: 0;
+    }
   
 .orange-bg {
   position: absolute;
@@ -592,6 +598,10 @@ p.thirdline {
   background-color: transparent;
   line-height: 450%;
   transform: skewY(-5deg);
+  @include sm {
+      line-height: 250%;
+      left: 15%;
+  }
   @include lg {
       line-height: 350%;
       transform: skewY(0deg);
@@ -601,12 +611,18 @@ p.h {
     font-family: $font-family-secoundary;
     font-size: 3rem;
     color: #FFD600;
+    @include sm {
+        font-size: 1.5rem;
+    }
  } 
 p.try {
     font-family: $font-family-secoundary;
     text-align: center;;
     font-size: 2rem;
     color: #FFD600;
+    @include sm {
+        font-size: 1.5rem;
+    }
   }
 }
 
