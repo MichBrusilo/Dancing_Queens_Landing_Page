@@ -385,6 +385,10 @@ p.bigline {
     min-height: 100vh;
     top: 30vh;
     background-color: white;
+    @include sm {
+        top: 10vh;
+        width: 100vw;
+    }
     @include lg {
         top: 35vh;
     }
@@ -394,12 +398,20 @@ p.bigline {
     left: 15%;
     transform-origin: 0 0;
     transform: rotate(-90deg);
+    @include sm {
+        display: none;
+        top: 35%;
+        left: 1%;
+    }
 }
 h1 {
     font-size: 3rem;
     color: #FF9800;
     background-color: #008d3a;
     padding: 10px 15px;
+    @include sm {
+        font-size: 1.5rem;
+    }
 }
 .images {
     display: flex;
@@ -409,7 +421,11 @@ h1 {
     top: 5%;
     right: 30%;
     bottom: 5%;
-    left: 30%;
+    left: 10%;
+    @include sm {
+        right: 1%;
+        max-width: 100%;
+    }
     
 }
 a {
@@ -437,6 +453,9 @@ img {
     min-height: 10vh;
     width: 100vw;
     top: -30vh;
+    @include sm {
+        top: 5vh;
+    }
 #next {
     color: #008d3a;
     font: normal bold 80px $font-family-secoundary;
@@ -485,6 +504,9 @@ img {
      min-height: 80vh;
      background-color: #FF9800;
      z-index: -1;
+     @include sm {
+         top: 5vh;
+     }
 .line1 {
     width: 30%;
     height: 5%;
