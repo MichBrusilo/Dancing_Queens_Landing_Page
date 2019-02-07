@@ -75,7 +75,9 @@ dq-header {
 }
 @include sm {
     flex-direction: column;
+    width: 115vw;
     height: 300px;
+    position: relative;
 }
 }
 
@@ -160,7 +162,10 @@ dq-mainfoto {
     background-position: center;
     width: 100vw;
     height: 90vh;
-   
+   @include sm {
+       width: 120vw;
+       height: 80vh;
+   }
 p.main {
     position: absolute;
     text-align: center;
@@ -184,6 +189,15 @@ p.main {
         font-size: 2rem;
         top: 70vh;
         right: 10vh;
+    }
+    @include sm {
+        font-size: 1.2rem;
+        top: 65vh;
+        right: 5vh;
+        &:hover,
+        {
+            font-size: 1.5rem;
+        }
     }
     
 }
