@@ -342,8 +342,9 @@ p.secondline {
     font-size: 2rem;
     color: #FF9800;
     @include sm {
-        top: 55%;
+        top: 60%;
         max-width: 75vw;
+        font-size: 1.2rem;
 
     }
     @include lg {
@@ -599,8 +600,9 @@ p.thirdline {
   line-height: 450%;
   transform: skewY(-5deg);
   @include sm {
-      line-height: 250%;
+      line-height: 170%;
       left: 15%;
+      top: - 45%;
   }
   @include lg {
       line-height: 350%;
