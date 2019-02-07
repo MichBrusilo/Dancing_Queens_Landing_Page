@@ -13,7 +13,7 @@ $screen-md-max: 768px;
 $screen-lg-max: 992px;
 
 // Large tablets and desktops
-$screen-xl-max: 1200px;
+$screen-xl-max: 1024px;
 
 // Small devices
 @mixin sm {
@@ -38,7 +38,7 @@ $screen-xl-max: 1200px;
  
  // Extra large devices
  @mixin xl {
-    @media (min-width: #{$screen-xl-min}) {
+    @media (max-width: #{$screen-xl-max}) {
         @content;
     }
  }
@@ -244,6 +244,9 @@ video {
         max-width: 400px;
         max-height: 350px;
     }
+    @include xl {
+        max-width: 500px;
+    }
 }
 menu {
     position: absolute;
@@ -258,6 +261,10 @@ menu {
     }
     @include lg {
         top: 210px;
+    }
+    @include xl {
+        top: 280px;
+        left: 20vw;
     }
 button {
     background-color: #f4511e;
@@ -319,6 +326,10 @@ a.rotate {
         top: 50vh;
         left: 25vw;
     }
+    @include xl {
+        left: 35vw;
+        top: 12vh;
+    }
 img {
     box-shadow: #008D3A 20px -8px 15px 2px;
     @include sm {
@@ -327,6 +338,9 @@ img {
     @include lg {
         max-width: 90vw;
         margin: 5% 0;
+    }
+    @include xl {
+        width: 70%;
     }
 }
    
@@ -342,6 +356,12 @@ p.firstline {
     text-shadow: 1px 2px 2px #FFEB3B, 3px 2px 16px #4caf50, 0 0 5px #FF9800;
     @include lg {
         display: none;
+    }
+    @include xl {
+        display: initial;
+        top: 90%;
+        font-size: 1.5rem;
+        left: -150px;
     }
 }
 
@@ -363,6 +383,10 @@ p.secondline {
         font-size: 1.5rem;
         top:60%;
         right: 5%;
+    }
+    @include xl {
+        top: 65%;
+        right: 15px;
     }
 }
 p.bigline {
@@ -389,6 +413,10 @@ p.bigline {
     color: #008d3a;
     text-shadow: 1px 2px 2px #FFEB3B, 3px 2px 16px #4caf50, 0 0 5px #FF9800;
     }
+    @include xl {
+        display: none;
+    }
+    
 }
 
 /*GALLERY*/
