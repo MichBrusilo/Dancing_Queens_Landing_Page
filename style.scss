@@ -193,7 +193,7 @@ p.main {
     @include sm {
         font-size: 1.2rem;
         top: 65vh;
-        right: 5vh;
+        right: 18vh;
         &:hover,
         {
             font-size: 1.5rem;
@@ -212,6 +212,10 @@ dq-aboutus {
     position: relative;
     height: 50vh;
     top: 10vh;
+    @include sm {
+        width: 100%;
+        height: 80vh;
+    }
     @include lg {
         max-width: 100vw;
     }
@@ -224,6 +228,11 @@ video {
     max-height: 500px;
     border: 10px solid #008d3a;
     box-shadow: -17px 16px 15px 0px #CDDC39;
+    @include sm {
+        top: 10px;
+        max-width: 90%;
+        border: 7px solid #008d3a;
+    }
     @include lg {
         top: 40px;
         max-width: 400px;
@@ -234,6 +243,9 @@ menu {
     position: absolute;
     top: 340px;
     left: 18.5vw;
+    @include sm {
+        top: 120px;
+    }
     @include lg {
         top: 210px;
     }
@@ -252,6 +264,9 @@ button {
     cursor: pointer;
     &:hover {
         opacity: 1;
+    }
+    @include sm {
+        
     }
     @include lg {
         padding: 8px 15px;
