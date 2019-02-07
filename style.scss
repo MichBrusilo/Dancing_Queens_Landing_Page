@@ -298,7 +298,7 @@ a.rotate {
     @include sm {
         max-width: 100vw;
         left: 5vw;
-        top: 42vh;
+        top: 50vh;
     }
     @include lg {
         max-width: 70vw;
@@ -357,7 +357,7 @@ p.bigline {
     display: none;
     @include sm {
         display: flex;
-        top: 15%;
+        top: 20%;
         left: 1%;
         max-width: 90%;
         font-size: 1.3rem;
@@ -454,7 +454,7 @@ img {
     width: 100vw;
     top: -30vh;
     @include sm {
-        top: 5vh;
+        top: 2vh;
     }
 #next {
     color: #008d3a;
@@ -529,7 +529,7 @@ p.thirdline {
     color: #008d3a;
     text-shadow: 1px 2px 2px #FFEB3B, 3px 2px 16px #4caf50, 0 0 5px #FF9800;
     @include sm {
-        top: 5%;
+        top: 3%;
         max-width: 100%;
         line-height: 100%;
         font-size: 1.8rem;
