@@ -506,12 +506,16 @@ img {
      z-index: -1;
      @include sm {
          top: 5vh;
+         height: 90vh;
      }
 .line1 {
     width: 30%;
     height: 5%;
     stroke: #008d3a;
     stroke-width: 20%;
+    @include sm {
+        width: 50%;
+    }
 }
 p.thirdline {
     position: absolute;
@@ -524,10 +528,19 @@ p.thirdline {
     font-size: 2rem;
     color: #008d3a;
     text-shadow: 1px 2px 2px #FFEB3B, 3px 2px 16px #4caf50, 0 0 5px #FF9800;
+    @include sm {
+        top: 5%;
+        max-width: 100%;
+        line-height: 100%;
+    }
 }
+
 .face {
    float: right;
    margin-right: 40px;
+   @include sm {
+       top: 20vh;
+   }
 }
  }
 
