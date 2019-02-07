@@ -141,7 +141,7 @@ a {
     white-space: nowrap;
     transition: 0.5s;
     transition-timing-function: linear;
-    &:hover, 
+    &:hover
     {
 color: #18dcff;
 opacity: 0.9;
@@ -177,7 +177,7 @@ p.main {
     text-shadow: 2px 6px 7px #00BCD4;
     font-family: $font-family-secoundary;
     transition: .5s;
-    &:hover,
+    &:hover
     {
     font-size: 3.2rem;
     cursor: pointer;
@@ -194,7 +194,7 @@ p.main {
         font-size: 1.2rem;
         top: 65vh;
         right: 18vh;
-        &:hover,
+        &:hover
         {
             font-size: 1.5rem;
         }
