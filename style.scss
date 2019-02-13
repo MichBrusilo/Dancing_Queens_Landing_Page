@@ -446,6 +446,10 @@ p.bigline {
         top: 35%;
         left: 1%;
     }
+    @include md {
+        left: 1%;
+
+    }
 }
 h1 {
     font-size: 3rem;
@@ -504,6 +508,7 @@ img {
     font: normal bold 80px $font-family-secoundary;
     padding: 0.5em 1.5em 0.5em 0;
     position: absolute;
+    top: 30%;
     right: 5%;
     text-decoration: none;
     @include lg {
