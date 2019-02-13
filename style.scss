@@ -48,7 +48,7 @@ $screen-xxl-min: 1440px;
  }
 
  // Super extra large
- 
+
  @mixin xxl {
     @media (min-width: #{$screen-xxl-min}) {
         @content;
@@ -522,6 +522,7 @@ img {
     width: 100vw;
     top: -30vh;
     @include sm {
+        display: none;
         top: 2vh;
     }
 #next {
@@ -578,7 +579,7 @@ img {
      background-color: #FF9800;
      z-index: -1;
      @include sm {
-         top: 5vh;
+         top: 15vh;
          height: 90vh;
      }
 .line1 {
