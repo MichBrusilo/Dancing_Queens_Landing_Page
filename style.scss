@@ -19,6 +19,10 @@ $screen-xl-max: 1024px;
 
 $screen-xxl-min: 1440px;
 
+// orientation landscape 
+
+
+
 // Small devices
 @mixin sm {
     @media (max-width: #{$screen-sm-max}) {
